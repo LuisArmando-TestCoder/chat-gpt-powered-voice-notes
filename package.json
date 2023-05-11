@@ -34,11 +34,13 @@
     "homepage": "https://github.com/LuisArmando-TestCoder/chat-gpt-powered-voice-notes#readme",
     "dependencies": {
         "@google-cloud/speech": "^5.4.1",
+        "crypto": "^1.0.1",
         "dotenv": "^16.0.3",
         "express": "^4.18.2",
         "fs": "^0.0.1-security",
         "get-user-media-promise": "^1.1.4",
         "googleapis": "^118.0.0",
+        "http": "^0.0.1-security",
         "microphone-stream": "^6.0.1",
         "node-record-lpcm16": "^1.0.1",
         "openai": "^3.2.1",
