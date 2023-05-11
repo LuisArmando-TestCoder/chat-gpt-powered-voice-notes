@@ -34,6 +34,7 @@
     "homepage": "https://github.com/LuisArmando-TestCoder/chat-gpt-powered-voice-notes#readme",
     "dependencies": {
         "@google-cloud/speech": "^5.4.1",
+        "cors": "^2.8.5",
         "crypto": "^1.0.1",
         "dotenv": "^16.0.3",
         "express": "^4.18.2",

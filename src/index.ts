@@ -4,6 +4,7 @@ import { Server as SocketIOServer } from "socket.io";
 import dotenv from "dotenv";
 import { Configuration, OpenAIApi } from "openai";
 import crypto from "crypto";
+import cors from "cors";
 import fs from "fs";
 
 dotenv.config();
@@ -11,6 +12,8 @@ dotenv.config();
 const app = express();
 const server = createServer(app);
 const io = new SocketIOServer(server);
+
+app.use(cors());
 
 app.get("/", (req, res) => {
   res.send("Welcome to the Socket.io server!");
