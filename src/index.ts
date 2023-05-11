@@ -64,7 +64,13 @@ io.on("connection", async (socket) => {
       .createHash("sha256")
       .update(summarizedVoiceNote as string)
       .digest("base64");
-    fs.writeFileSync(`../../.secrets/${hash}.txt`, summarizedVoiceNote as string);
+
+    const notesDirectory = '../../notes';
+
+    if (!fs.existsSync(notesDirectory)){
+      fs.mkdirSync(notesDirectory);
+    }
+    fs.writeFileSync(`${notesDirectory}/${hash}.txt`, summarizedVoiceNote as string);
   });
 });
 
