@@ -1,5 +1,6 @@
 src/**.js
 .test
+.secrets
 
 # Logs
 logs
