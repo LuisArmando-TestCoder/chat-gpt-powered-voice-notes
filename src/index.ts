@@ -20,7 +20,7 @@ io.on("connection", async (socket) => {
   console.log("A user connected.");
 
   const configuration = new Configuration({
-    organization: process.env.OPENAI_ORGANIZATION_ID,
+    // organization: process.env.OPENAI_ORGANIZATION_ID,
     apiKey: process.env.OPENAI_API_KEY,
   });
   const openai = new OpenAIApi(configuration);
